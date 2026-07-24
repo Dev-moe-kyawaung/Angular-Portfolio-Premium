@@ -1,0 +1,11 @@
+<div class="app-container" [class.dark-mode]="themeService.isDark$ | async" [class.light-mode]="!(themeService.isDark$ | async)">
+  <app-navbar></app-navbar>
+  <app-particle-background></app-particle-background>
+  
+  <main class="main-content">
+    <router-outlet></router-outlet>
+  </main>
+  
+  <app-footer></app-footer>
+</div>
+

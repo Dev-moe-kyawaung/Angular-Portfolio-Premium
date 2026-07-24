@@ -1,0 +1,85 @@
+<div class="project-detail-page">
+  <div *ngIf="loading" class="loading-container">
+    <mat-spinner></mat-spinner>
+  </div>
+
+  <ng-container *ngIf="!loading && project">
+    <!-- Back Button -->
+    <a routerLink="/projects" class="back-btn">
+      <mat-icon>arrow_back</mat-icon>
+      Back to Projects
+    </a>
+
+    <!-- Hero Section -->
+    <section class="project-hero">
+      <div class="hero-content">
+        <app-animated-section>
+          <h1>
+            <span class="gradient-text">{{ project.title }}</span>
+          </h1>
+        </app-animated-section>
+
+        <app-animated-section [delay]="200">
+          <p class="description">{{ project.description }}</p>
+        </app-animated-section>
+
+        <app-animated-section [delay]="400">
+          <div class="technologies">
+            <span *ngFor="let tech of project.technologies" class="tech-badge">
+              {{ tech }}
+            </span>
+          </div>
+        </app-animated-section>
+
+        <app-animated-section [delay]="600">
+          <div class="project-links">
+            <a [href]="project.githubUrl" target="_blank" class="btn-primary">
+              <mat-icon>code</mat-icon>
+              View Source
+            </a>
+            <a [href]="project.githubUrl" target="_blank" class="btn-secondary">
+              <mat-icon>open_in_new</mat-icon>
+              Live Demo
+            </a>
+          </div>
+        </app-animated-section>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat-card glass">
+          <mat-icon>star</mat-icon>
+          <span class="stat-value gradient-text">{{ project.stars }}</span>
+          <span class="stat-label">Stars</span>
+        </div>
+        <div class="stat-card glass">
+          <mat-icon>call_split</mat-icon>
+          <span class="stat-value gradient-text">{{ project.forks }}</span>
+          <span class="stat-label">Forks</span>
+        </div>
+        <div class="stat-card glass">
+          <mat-icon>category</mat-icon>
+          <span class="stat-value gradient-text">{{ project.category }}</span>
+          <span class="stat-label">Category</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+      <app-animated-section>
+        <h2 class="section-title">
+          Key <span class="gradient-text">Features</span>
+        </h2>
+      </app-animated-section>
+
+      <div class="features-grid">
+        <div *ngFor="let feature of features" class="feature-card glass">
+          <mat-icon>{{ feature.icon }}</mat-icon>
+          <h3>{{ feature.title }}</h3>
+          <p>{{ feature.description }}</p>
+        </div>
+      </div>
+    </section>
+  </ng-container>
+</div>
+

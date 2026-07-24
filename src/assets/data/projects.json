@@ -1,0 +1,48 @@
+
+[
+  {
+    "id": "1",
+    "title": "Flutter Portfolio Premium",
+    "description": "A premium Flutter web portfolio with dark mode and animations",
+    "longDescription": "This project showcases a modern portfolio built with Flutter Web. Features include dark/light theme toggle, Lottie animations, responsive design, and GitHub API integration.",
+    "technologies": ["Flutter", "Dart", "Provider", "Lottie"],
+    "imageUrl": "assets/images/project1.png",
+    "githubUrl": "https://github.com/Dev-moekyawaung/flutter_portfolio_premium",
+    "liveUrl": "https://dev-moekyawaung.github.io/flutter-portfolio",
+    "featured": true,
+    "category": "Mobile",
+    "stars": 45,
+    "forks": 12,
+    "year": 2024
+  },
+  {
+    "id": "2",
+    "title": "Next.js Premium Dashboard",
+    "description": "Modern dashboard with Three.js background animations",
+    "longDescription": "A sophisticated dashboard built with Next.js featuring Three.js 3D backgrounds, real-time data charts, and dark/light theme support.",
+    "technologies": ["Next.js", "TypeScript", "Three.js", "Chart.js"],
+    "imageUrl": "assets/images/project2.png",
+    "githubUrl": "https://github.com/Dev-moekyawaung/nextjs_dashboard",
+    "liveUrl": "https://dev-moekyawaung-nextjs-dashboard.vercel.app",
+    "featured": true,
+    "category": "Web",
+    "stars": 78,
+    "forks": 23,
+    "year": 2024
+  },
+  {
+    "id": "3",
+    "title": "Ktor Backend API",
+    "description": "High-performance Ktor backend API service",
+    "longDescription": "A robust backend API built with Kotlin and Ktor. Features include JWT authentication, PostgreSQL integration, and comprehensive API documentation.",
+    "technologies": ["Kotlin", "Ktor", "PostgreSQL", "JWT"],
+    "imageUrl": "assets/images/project3.png",
+    "githubUrl": "https://github.com/Dev-moekyawaung/ktor_api",
+    "liveUrl": "https://ktor-api.moekyawaung.dev",
+    "featured": true,
+    "category": "Backend",
+    "stars": 34,
+    "forks": 8,
+    "year": 2024
+  }
+]

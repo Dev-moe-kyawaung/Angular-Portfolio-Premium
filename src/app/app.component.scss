@@ -1,0 +1,13 @@
+.app-container {
+  min-height: 100vh;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.main-content {
+  position: relative;
+  z-index: 1;
+  padding-top: 80px; // Navbar height
+  min-height: calc(100vh - 80px);
+}
+
